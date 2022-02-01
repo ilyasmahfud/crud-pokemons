@@ -2,7 +2,9 @@
 - git clone
 - cd into project
 - composer install/update
-- set the `env` file to `.env`
+- make the database in postgre or mysql or something else
+- set the `env` file to `.env` then set the environment
+- for me :
     ```
     CI_ENVIRONMENT = development
     ...
