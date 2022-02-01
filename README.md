@@ -83,7 +83,16 @@ type of pokemons will be automatically created in table `type` and `pokemonTypeT
 ```
 http://localhost:8080/pokemon
 ```
-
+request body:
+```
+{
+    "name": "kura",
+    "type": [
+        "Ganas"
+    ]
+}
+```
+response:
 ```
 {
     "name": "kura",
@@ -98,6 +107,16 @@ type of pokemons will be automatically updated in table `type` and `pokemonTypeT
 ```
 http://localhost:8080/pokemon/a0ad13c3-c1bc-4de0-891f-1e29d265cfbe
 ```
+request body:
+```
+{
+    "name": "kura",
+    "type": [
+        "Galak","Grass"
+    ]
+}
+```
+response:
 ```
 {
     "status": 201,
