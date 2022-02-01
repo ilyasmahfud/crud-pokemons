@@ -2,6 +2,17 @@
 - git clone
 - cd into project
 - composer install/update
+- set the `env` file to `.env`
+    ```
+    CI_ENVIRONMENT = development
+    ...
+    database.default.hostname = localhost
+    database.default.database = pokemon
+    database.default.username = postgres
+    database.default.password = bismillah
+    database.default.DBDriver = Postgre
+    database.default.DBPrefix =
+    ```
 - php spark migrate
 - php spark serve
 - test the API using postman or insomnia or other
